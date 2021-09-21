@@ -1,4 +1,4 @@
-public class Variablen {
+public class P03Variablen {
     public static void variablen() {
         // die Variable (pl. Variablen)
         int x;                // Deklaration (Bekanntmachung)

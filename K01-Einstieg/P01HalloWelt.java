@@ -1,4 +1,4 @@
-public class HalloWelt {
+public class P01HalloWelt {
     public static void begruesse() {
         System.out.println("Hallo, Welt!");
     }
