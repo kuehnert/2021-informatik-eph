@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=P07Roboter
+comment1.params=
+comment1.target=void\ geheSchritt()
+comment2.params=
+comment2.target=void\ gehe10Schritte()
+comment3.params=
+comment3.target=void\ dreheLinks()
+comment4.params=
+comment4.target=void\ dreheRechts()
+numComments=5
