@@ -27,10 +27,12 @@ public class P06Ganzzahlen {
     public static void findeMaximum() {
         // min: 2_100_000_000;
         // max: 2_150_000_000
-        int x = 2_147_483_647;
+        // int x = 2_147_483_647;
+        int x = Integer.MAX_VALUE;
         System.out.println(x);
 
-        x = x + 1; // erhöhe x um 1
-        System.out.println(x);
+        // x = x + 1; // erhöhe x um 1
+        int y = Integer.MIN_VALUE;
+        System.out.println(y);
     }
 }
