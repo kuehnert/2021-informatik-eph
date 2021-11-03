@@ -104,4 +104,19 @@ public class P08BedingteAnweisungen {
     // Wie alt bist Du? 
     // >= 18: "Du darfst wählen!"
     //  < 18: "Du musst noch x Jahre warten"
+    public static void altersabfrage() {
+        Scanner tastatur = new Scanner(System.in);
+
+        System.out.print("Wie alt bist Du? ");
+        int antwort = tastatur.nextInt();
+        
+        if (antwort >= 18) {
+            System.out.println("Du darfst wählen");
+        } else {
+            int wartezeit = 18 - antwort;
+            System.out.print("Du musst noch ");
+            System.out.print(wartezeit);
+            System.out.println(" Jahre warten.");
+        }
+    }
 }
