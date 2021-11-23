@@ -14,6 +14,7 @@ comment5.params=
 comment5.target=void\ schleife3()
 comment6.params=
 comment6.target=void\ schleife4()
+comment6.text=\r\n\ Zahlenraten\r\n\ 1.\ PC\ denkt\ sich\ eine\ zuf\u00E4llige\ Zahl\ zw.\ 1\ und\ 100\r\n\ 2.\ Spieler\ muss\ sie\ raten\r\n\ 3.\ Der\ PC\ meldet\ zur\u00FCck,\ ob\r\n\ \ \ \ a.\ die\ Zahl\ kleiner\ ist\ als\ die\ gesuchte\r\n\ \ \ \ b.\ die\ Zahl\ gr\u00F6\u00DFer\ ist\ als\ die\ gesuchte\r\n\ \ \ \ c.\ die\ Zahlen\ gleich,\ d.h.\ der\ Spieler\ hat\ gewonnen\r\n
 comment7.params=
 comment7.target=void\ schleife5()
 comment8.params=

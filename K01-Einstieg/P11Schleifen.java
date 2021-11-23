@@ -70,6 +70,15 @@ public class P11Schleifen {
         
     }
 
+    /*
+     * Zahlenraten
+     * 1. PC denkt sich eine zufällige Zahl zw. 1 und 100
+     * 2. Spieler muss sie raten
+     * 3. Der PC meldet zurück, ob
+     *    a. die Zahl kleiner ist als die gesuchte
+     *    b. die Zahl größer ist als die gesuchte
+     *    c. die Zahlen gleich, d.h. der Spieler hat gewonnen
+     */
     public static void schleife4() {
     }
 
