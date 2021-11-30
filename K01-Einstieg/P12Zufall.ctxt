@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ zufallszahlenMitSchleife()
 comment4.params=
 comment4.target=void\ wuerfeln()
-numComments=5
+comment5.params=
+comment5.target=void\ zufallsqualitaet()
+numComments=6

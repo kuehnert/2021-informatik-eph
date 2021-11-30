@@ -70,4 +70,39 @@ public class P12Zufall {
     // wie oft der „zufällig“ welche Zahl sagt
     // Schreiben Sie einen Absatz, wo Sie argumentieren, ob der Mensch oder
     // der PC die Aufgabe, Zahlen zufällig zu „würfeln“ besser gelöst hat
+    // cognitive fallacy
+
+    public static void zufallsqualitaet() {
+        Random generator = new Random();
+        int w1 = 0, w2 = 0, w3 = 0, w4 = 0, w5 = 0, w6 = 0, zaehler = 0;
+
+        while (zaehler < 1000) {
+            int x = generator.nextInt(6) + 1; // 1..6
+
+            if (x == 1) {
+                // w1 + 1; // lesender Zugriff
+                // w1 = .... // schreibender Zugriff
+                w1 = w1 + 1;
+            } else if (x == 2) {
+                w2 = w2 + 1;
+            } else if (x == 3) {
+                w3 = w3 + 1;
+            } else if (x == 4) {
+                w4 = w4 + 1;
+            } else if (x == 5) {
+                w5 = w5 + 1;
+            } else {
+                w6 = w6 + 1;
+            }
+
+            zaehler = zaehler + 1;
+        }
+
+        System.out.println(w1);
+        System.out.println(w2);
+        System.out.println(w3);
+        System.out.println(w4);
+        System.out.println(w5);
+        System.out.println(w6);
+    }
 }
