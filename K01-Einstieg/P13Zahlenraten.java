@@ -86,6 +86,10 @@ public class P13Zahlenraten {
         } while (computerZahl != benutzerZahl);
 
         System.out.println("Hurra, Du hast sie geraten!");
-        System.out.println("Du hast nur "+versuche+" Versuche gebraucht.");
+        System.out.println("Du hast nur " + versuche + " Versuche gebraucht.");
     }
+    
+    // Erweitern Sie das Spiel so, dass nach 6. erfolglosen Versuchen
+    // abgebrochen wird.
+    
 }

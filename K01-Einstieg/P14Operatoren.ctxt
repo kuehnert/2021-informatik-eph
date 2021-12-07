@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=P14Operatoren
+comment1.params=
+comment1.target=void\ booleans()
+comment2.params=
+comment2.target=void\ undOperator()
+comment3.params=
+comment3.target=void\ oderOperator()
+comment4.params=
+comment4.target=void\ exklusivesOderOperator()
+comment5.params=
+comment5.target=void\ nichtOperator()
+numComments=6
