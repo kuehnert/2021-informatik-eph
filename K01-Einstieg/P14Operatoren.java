@@ -1,3 +1,5 @@
+// Logische Operatoren
+// &&, ||, ^
 public class P14Operatoren {
     public static void booleans() {
         boolean a;
