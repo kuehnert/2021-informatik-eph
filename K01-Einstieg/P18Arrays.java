@@ -56,20 +56,32 @@ public class P18Arrays {
             myArray[number] = number * number;
         }
         
-        // Ausgabe
-        for (int number = 0; number < 10; number = number + 1) {
-            System.out.println( myArray[number] );
-        }
+        ausgeben(myArray);
     }
     
     // 1. Schreiben Sie eine Methode, welche die ersten 1000 Zahlen der
     //    Dreier-Reihe in einem Array speichert, also 0, 3, 6, 9, ... 2997
-    
+    public static void dreier() {
+        // Erstelle ein Array mit 10 Zahlen, und setze jede auf 
+        // die nächste Quadratzahl von 1 bis 100
+        int[] myArray;
+        myArray = new int[100];
+
+        for (int number = 0; number < myArray.length; number = number + 1) {
+            myArray[number] = number * 3;
+        }
+        
+        ausgeben(myArray);
+    }
     // 2. Füllen Sie ein Array von 500 Stellen mit Zufallszahlen zwischen
     //    0 und 1000.
     
     // 3. Füllen Sie ein Array von 200 Stellen mit absteigenden Zahlen
     //    von 199 bis 0: 199, 198, 197, ... 3, 2, 1, 0.
     
-    
+    public static void ausgeben(int[] ar) {
+        for (int number = 0; number < ar.length; number = number + 1) {
+            System.out.println( ar[number] );
+        }
+    }
 }
