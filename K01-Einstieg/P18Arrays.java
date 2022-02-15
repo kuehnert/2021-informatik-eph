@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class P18Arrays {
     // Datentyp zum Speichern mehrerer Werte eines Typs
     public static void arrays1() {
@@ -73,15 +75,81 @@ public class P18Arrays {
         
         ausgeben(myArray);
     }
+    
     // 2. Füllen Sie ein Array von 500 Stellen mit Zufallszahlen zwischen
     //    0 und 1000.
+    public static void zufallszahlen() {
+        Random generator = new Random();
+        int[] zahlen;
+        zahlen = new int[500];
+        
+        for (int i = 0; i < zahlen.length; i++) {
+            zahlen[i] = generator.nextInt(1000);
+        }
+        
+        ausgeben(zahlen);
+    }
     
     // 3. Füllen Sie ein Array von 200 Stellen mit absteigenden Zahlen
     //    von 199 bis 0: 199, 198, 197, ... 3, 2, 1, 0.
+    public static void absteigend(int laenge) {
+        int[] zahlen;
+        zahlen = new int[laenge];
+        
+        for (int i = 0; i < zahlen.length; i = i + 1) {
+            zahlen[i] = zahlen.length - 1 - i;
+        }
+        
+        ausgeben(zahlen);
+    }
+    
+    public static void hauptprogramm() {
+        // absteigend(20);
+        // System.out.println("---------------------------");
+        // absteigend(10);
+        // System.out.println("---------------------------");
+        
+        verfuenffachen(4); // verworfen
+        System.out.println(  verfuenffachen(4)  );
+        
+        int z = 50;
+        System.out.println(z); // 1. 50
+
+        z = verfuenffachen(z);
+        System.out.println(z); // 2. 250
+        
+        z = verfuenffachen(z);
+        System.out.println(z); // 3. 1250
+        
+        System.out.println( verfuenffachen( verfuenffachen(3) ) );
+    }
+    
+    // Rückgaben
+    // Rückgabedatentyp => statt void z.B. int, double, String
+    // Rückgabewert => Tatsächlicher Wert, Z.B. 3, 3.5, "Hallo"
+    public static int verfuenffachen(int zahl) {
+        // System.out.println(zahl * 5) ; // Ausgabe
+        return zahl * 5;
+    }
     
     public static void ausgeben(int[] ar) {
         for (int number = 0; number < ar.length; number = number + 1) {
-            System.out.println( ar[number] );
+            System.out.println(number + ". Stelle: " + ar[number] );
         }
     }
+    
+    // Hausaufgabe vom 15.2.
+    // Schreiben Sie eine Methode "multi", welche eine Ganzzahl
+    // als Parameter erhält, sie mit einer zufälligen Zahl zwischen
+    // 1 und 10 multipliziert und das Ergebnis zurückgibt
 }
+
+
+
+
+
+
+
+
+
+
