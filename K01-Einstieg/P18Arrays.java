@@ -126,7 +126,7 @@ public class P18Arrays {
     
     // Rückgaben
     // Rückgabedatentyp => statt void z.B. int, double, String
-    // Rückgabewert => Tatsächlicher Wert, Z.B. 3, 3.5, "Hallo"
+    // Rückgabewert => Wert hinter "return": Tatsächlicher Wert, Z.B. 3, 3.5, "Hallo"
     public static int verfuenffachen(int zahl) {
         // System.out.println(zahl * 5) ; // Ausgabe
         return zahl * 5;
@@ -142,6 +142,31 @@ public class P18Arrays {
     // Schreiben Sie eine Methode "multi", welche eine Ganzzahl
     // als Parameter erhält, sie mit einer zufälligen Zahl zwischen
     // 1 und 10 multipliziert und das Ergebnis zurückgibt
+    public static int multi(int zahl) {
+        Random gen = new Random();
+        
+        // int zuffi = gen.nextInt(10); // => 0..9
+        int zuffi = gen.nextInt(10) + 1; // => 1..10
+        
+        return zuffi * zahl;
+    }
+    
+    // Bekommt ein Array mit Ganzzahlen
+    // Verändert jedes Element so, dass es mit 100 multipliziert wird
+    // Und gibt das geänderte Array zurück
+    // Beispiel: {4, 7, 2} => {400, 700, 200}
+    public static int[] verhundertfachen(int[] zahlen) {
+        // gehe mit einer for-Schleife durch das Array
+        // multipliziere jedes Element (an Stelle i) mit 100
+        // und speichere das Ergebnis wieder im Element an Stelle i
+        return zahlen;
+    }
+    
+    public static void testVerhundertfachen() {
+        int[] a = new int[]{1, 2, 3};
+        a = verhundertfachen(a);
+        ausgeben(a);
+    }
 }
 
 
