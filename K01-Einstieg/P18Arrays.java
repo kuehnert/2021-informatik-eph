@@ -159,6 +159,10 @@ public class P18Arrays {
         // gehe mit einer for-Schleife durch das Array
         // multipliziere jedes Element (an Stelle i) mit 100
         // und speichere das Ergebnis wieder im Element an Stelle i
+        for (int i = 0; i < zahlen.length; i = i + 1) {
+            zahlen[i] = zahlen[i] * 100;
+        }
+        
         return zahlen;
     }
     
