@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=P19ArraysBesser
+comment0.target=B19ArraysBesser
 comment1.params=anzahl\ basis
 comment1.target=int[]\ reihen(int,\ int)
 comment2.params=laenge

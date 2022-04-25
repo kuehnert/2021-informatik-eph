@@ -1,4 +1,4 @@
-public class P21Konkatenieren {
+public class B21Konkatenieren {
     // Aufgabe:
     // Sie bekommen zwei verschiedene Arrays
     // mit jeweils aufsteigenden Zahlen

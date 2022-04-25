@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class P18Arrays {
+public class B18Arrays {
     // Datentyp zum Speichern mehrerer Werte eines Typs
     public static void arrays1() {
         // Deklaration

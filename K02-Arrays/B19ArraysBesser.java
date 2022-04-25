@@ -1,4 +1,4 @@
-public class P19ArraysBesser {
+public class B19ArraysBesser {
     // Dreierreihe
     // Soll ein Array mit <anzahl> Elementen erzeugen, die die 7-Reihe
     // darstellen.
@@ -38,11 +38,11 @@ public class P19ArraysBesser {
     public static void main() {
         int[] rueckgabe;
         rueckgabe = reihen(20, 18);
-        P18Arrays.ausgeben(rueckgabe);
+        B18Arrays.ausgeben(rueckgabe);
         System.out.println("-----------------------------------");
         
         rueckgabe = absteigend(7);
-        P18Arrays.ausgeben(rueckgabe);
+        B18Arrays.ausgeben(rueckgabe);
         
     }
     

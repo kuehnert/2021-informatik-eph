@@ -1,4 +1,4 @@
-public class P22Klausur {
+public class B22Klausur {
     public static int minimumKaputt(int[] a) {
         int minimum = a[0];
 

@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class P20Mathespiel {
+public class B20Mathespiel {
     public static void main() {
         // Wähle zufällig eine Zahlenreihe (2..20) aus, die der Benutzer
         // vervollständigen soll.
