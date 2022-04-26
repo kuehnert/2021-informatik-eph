@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=B24Minimum
+comment1.params=zahlen
+comment1.target=int\ findeKleinste(int[])
+comment2.params=zahlen
+comment2.target=int\ findeZweitKleinste(int[])
+comment3.params=
+comment3.target=void\ testeFindeKleinste()
+numComments=4
