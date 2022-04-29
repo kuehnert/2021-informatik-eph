@@ -7,7 +7,7 @@ public class B24Minimum {
     //    wieder in bisherigesMin
     // 4. Gib bisherigesMin zurück
 
-    public int findeKleinste(int[] zahlen) {
+    public static int findeKleinste(int[] zahlen) {
         // 1. Erstelle eine Ganzzahl bisherigesMin
         // und setze sie auf den Wert der 1. Zahl (1. => 0.)
         int bisherigesMin = zahlen[0];
@@ -37,7 +37,7 @@ public class B24Minimum {
 
     // gib nächstgrößte zurück
 
-    public int findeZweitKleinste(int[] zahlen) {
+    public static int findeZweitKleinste(int[] zahlen) {
         // 1. Erstelle zwei Ganzzahlen min1, min2
         int min1 = zahlen[0];
         int min2 = zahlen[1];
@@ -65,7 +65,7 @@ public class B24Minimum {
         return min2;
     }    
 
-    public void testeFindeKleinste()  {
+    public static void testeFindeKleinste()  {
         int[] zahlen = {4534, 23464, 489, 366, 5066, 8543, 3928, 
                 47384, 30946, 8403, 422, 784 };
         int min = findeKleinste(zahlen);

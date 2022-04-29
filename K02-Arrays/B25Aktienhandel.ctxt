@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=B25Aktienhandel
+comment1.params=a
+comment1.target=void\ haendler(int[])
+comment1.text=\r\n\ Eine\ Serie\ von\ Aktienkursen\ ist\ gegeben,\ wobei\r\n\ jede\ Stelle\ einen\ Tag\ repr\u00E4sentiert\ und\ der\ Wert\r\n\ an\ der\ Stelle\ den\ Aktienkurs\ an\ diesem\ Tag.\r\n\ Bestimmen\ Sie\ den\ maximalen\ Gewinn,\ der\ erwirtschaftet\r\n\ werden\ kann,\ wenn\ man\ genau\ einmal\ Aktien\ kaufen\r\n\ und\ einmal\ wieder\ verkaufen\ kann.\r\n\ Der\ Kauf\ muss\ vor\ dem\ Verkauf\ stattfinden\!\r\n\ \r\n\ Wenn\ kein\ Gewinn\ m\u00F6glich\ ist,\ soll\ 0\ zur\u00FCckgegeben\r\n\ werden\ {100,\ 50,\ 20},\ {1001,\ 1001,\ 1001}.\r\n
+comment2.params=
+comment2.target=void\ beispiel()
+numComments=3
