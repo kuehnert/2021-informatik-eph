@@ -75,4 +75,23 @@ public class B24Minimum {
         System.out.println("min2:" + min2);
 
     }
+
+    public static int findeGroesste(int[] zahlen) {
+        // 1. Erstelle eine Ganzzahl bisherigesMin
+        // und setze sie auf den Wert der 1. Zahl (1. => 0.)
+        int bisherigesMax = zahlen[0];
+
+        // 2. Gehe von der 2. (=> 1.) Zahl bis zur letzten
+        for (int i = 1; i < zahlen.length; i = i + 1) {
+            // 3. Vergleiche jede dieser Zahlen mit
+            //    bisherigesMin
+            if (zahlen[i] > bisherigesMax) {
+                // speichere die kleinere wieder in bisherigesMin
+                bisherigesMax = zahlen[i];
+            }
+        }
+
+        // 4. Gib bisherigesMin zurück
+        return bisherigesMax;
+    }
 }

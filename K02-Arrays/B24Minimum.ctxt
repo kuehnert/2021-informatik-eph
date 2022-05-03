@@ -6,4 +6,6 @@ comment2.params=zahlen
 comment2.target=int\ findeZweitKleinste(int[])
 comment3.params=
 comment3.target=void\ testeFindeKleinste()
-numComments=4
+comment4.params=zahlen
+comment4.target=int\ findeGroesste(int[])
+numComments=5
