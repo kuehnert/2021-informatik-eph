@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Automat
+comment0.text=\r\n\ W\u00DCNSCHE\ an\ das\ Programm\:\r\n\ \ \ *\ Wechselgeld\ geben\ bei\ \u00DCberzahlung\r\n\ \ \ *\ Verabschiedung\r\n\ \ \ *\ Bediene\ mehrere\ Kunden\r\n\ \ \ *\ \u00DCberpr\u00FCfe\ auf\ g\u00FCltige\ Zahlungsmittel\r\n\ \ \ *\ Verbessere\ die\ Ausgabe\ von\ Geldbetr\u00E4gen\r\n
 comment1.params=
 comment1.target=void\ begruesse()
 comment2.params=

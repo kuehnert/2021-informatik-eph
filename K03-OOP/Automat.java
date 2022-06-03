@@ -21,12 +21,13 @@ import java.util.Scanner;
 public class Automat {
     // Instanzvariablen (=> Instanz == Objekt)
     private Scanner tastatur = new Scanner(System.in);
-    private static final double TICKETPREIS = 0.80;
+    private static final Geld TICKETPREIS = new Geld();
     private int anzahl = 0; 
     private double zuBezahlen = 0.0;
 
     // Begrüßung
     public void begruesse() {
+        TICKETPREIS.betrag = 0.8;
         System.out.println("Willkommen bei Ticketautomaten für MrK-Railways!");
     }
 
@@ -42,7 +43,9 @@ public class Automat {
     // Zu bezahlenden Betrag berechnen & ausgeben
     public void berechneSumme() {
         zuBezahlen = anzahl * TICKETPREIS;
-        System.out.println("Bezahle " + zuBezahlen + " €.");
+        // double bereinigt = Math.round(zuBezahlen * 100) / 100.0;
+        // System.out.println("Bezahle " + bereinigt + " €.");
+        // GIB AUS
     }
 
     // Bargeld annehmen
