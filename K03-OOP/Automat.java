@@ -21,12 +21,13 @@ import java.util.Scanner;
 public class Automat {
     // Instanzvariablen (=> Instanz == Objekt)
     private Scanner tastatur = new Scanner(System.in);
-    private static final Geld TICKETPREIS = new Geld();
+    private static Geld TICKETPREIS;
     private int anzahl = 0; 
-    private double zuBezahlen = 0.0;
+    private Geld zuBezahlen;
 
     // Begrüßung
     public void begruesse() {
+        TICKETPREIS = new Geld();
         TICKETPREIS.betrag = 0.8;
         System.out.println("Willkommen bei Ticketautomaten für MrK-Railways!");
     }
@@ -42,21 +43,21 @@ public class Automat {
 
     // Zu bezahlenden Betrag berechnen & ausgeben
     public void berechneSumme() {
-        zuBezahlen = anzahl * TICKETPREIS;
-        // double bereinigt = Math.round(zuBezahlen * 100) / 100.0;
-        // System.out.println("Bezahle " + bereinigt + " €.");
-        // GIB AUS
+        zuBezahlen = new Geld();
+        zuBezahlen.betrag = anzahl;
+        zuBezahlen.multipliziereMit(TICKETPREIS.betrag);
+        System.out.println("Bezahle " + zuBezahlen.gibBetrag() + " €.");
     }
 
     // Bargeld annehmen
     public void bezahle() {
         // Nimm nacheinander ein gültiges Geldstück bzw. -schein
         // entgegen und ziehe den Betrag von zuBezahlen ab,
-        while (zuBezahlen > 0.01) {
-            System.out.println("Bezahlen Sie: " + zuBezahlen + "€");
-            double geldstueck = tastatur.nextDouble();
-            zuBezahlen = zuBezahlen - geldstueck;
-        }
+        // while (zuBezahlen > 0.01) {
+            // System.out.println("Bezahlen Sie: " + zuBezahlen + "€");
+            // double geldstueck = tastatur.nextDouble();
+            // zuBezahlen = zuBezahlen - geldstueck;
+        // }
     }
 
     // Tickets in der richtigen Anzahl drucken
